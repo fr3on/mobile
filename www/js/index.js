@@ -28,6 +28,7 @@ var app = {
 					device: "mobile"
 				}
 			}).success(function(data, status, xhr) {
+				common.msgprint("Pharaoh");
 				if(data && data['message']=='Logged In') {
 					localStorage.user = $("#usr").val();
 					var cookie_source = xhr.getResponseHeader('Set-Cookie');
